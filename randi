@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use feature qw/say/;
+
+my $max = shift // 100;
+say int(rand($max + 1))
+
+__END__
+

@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use feature qw/say/;
+use Time::Piece;
+
+my $epoch = shift or die 'You must give epoch argument';
+die 'Epoch must be numeric' unless $epoch =~ /\A[0-9]+\Z/;
+say localtime($epoch)->datetime;
+
+__END__
+

@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use String::Random;
+use feature qw/say/;
+
+my $std_len = shift // 16;
+die 'Length of string must be numeric' unless $std_len =~ /\A[0-9]+\Z/;
+say String::Random->new->randregex("[a-zA-Z0-9]{$std_len}");
+
+__END__
+
