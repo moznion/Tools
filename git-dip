@@ -1,5 +1,0 @@
-#!/bin/sh
-
-file=$(git status -s | peco | awk '{print $2}')
-git diff HEAD $file
-

@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use utf8;
+use Time::Piece;
+
+my $t = localtime;
+printf "%04d%02d%02d%02d%02d\n", $t->year,
+                                 $t->mon,
+                                 $t->mday,
+                                 $t->hour,
+                                 $t->min;
+
+__END__
+
