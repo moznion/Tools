@@ -1,0 +1,8 @@
+#!/bin/sh
+
+SCRIPT_FILE_NAME="$1"
+
+if [ -f $SCRIPT_FILE_NAME ] ; then
+  $SHELL $SCRIPT_FILE_NAME
+fi
+
